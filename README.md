@@ -1,4 +1,4 @@
-# N-bit-ALU-using-verilog
+# N-bit ALU using Verilog
 Model and validate a synthesizable N-bit ALU capable of performing the following operations:    
 
                  Control Lines                 Operation              
