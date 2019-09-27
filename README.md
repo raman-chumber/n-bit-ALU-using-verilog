@@ -1,5 +1,5 @@
 # N-bit ALU using Verilog
-Model and validate a synthesizable N-bit ALU capable of performing the following operations:    
+Modeling and validating a synthesizable N-bit ALU capable of performing the following operations:    
 
                  Control Lines                 Operation              
                         00                      Addition                       
@@ -7,9 +7,9 @@ Model and validate a synthesizable N-bit ALU capable of performing the following
                         10                      Bitwise AND                    
                         11                      Bitwise OR    
           
-This should be designed as a parameterized design with width of data inputs be set by a parameter.  The default value for the parameter is 16.    This module has three inputs: two N-bit signed numbers represented in 2's complement format (A & B) and a 2-bit control (CTRL).  It produces four outputs: a N-bit result (R),  an overflow flag (O), a sign flag (N), and a Zero flag (Z).  The result should be in 2's complement format as well.  The overflow bit is set when the result of addition or subtraction is out of range.  The sign flag is set when the result is negative.  The zero flag is set when the result is zero. 
+This is a parameterized design with width of data inputs be set by a parameter.  The default value for the parameter is 16.    This module has three inputs: two N-bit signed numbers represented in 2's complement format (A & B) and a 2-bit control (CTRL).  It produces four outputs: a N-bit result (R),  an overflow flag (O), a sign flag (N), and a Zero flag (Z).  The result is in 2's complement format as well.  The overflow bit is set when the result of addition or subtraction is out of range.  The sign flag is set when the result is negative.  The zero flag is set when the result is zero. 
 
-Verify the functionality of a 32-bit version of the model Using simulation. This should be done by changing the width parameter during simulation.  Use the following test vectors for the simulation results that you submit:
+Verifying the functionality of a 32-bit version of the model Using simulation. It is done by changing the width parameter during simulation.  Used the following test vectors for the simulation results:
 
                  Addition & subtraction
 
